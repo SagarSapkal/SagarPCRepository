@@ -39,7 +39,7 @@ public class login {
 		
 	}
 
-	@Test(priority=3)
+	@Test(priority=1)
 	 public void actions() throws InterruptedException {
 		
 		
