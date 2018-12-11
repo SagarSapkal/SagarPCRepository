@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.test.login">
+      <class name="com.axisbank.qa.testcases.Savings_EasyAccessSA_Test">
         <methods>
-          <include name="Beforemethod"/>
-          <include name="actions"/>
+          <include name="TearDown"/>
+          <include name="SubmitFormTest"/>
+          <include name="SetUp"/>
         </methods>
-      </class> <!-- com.qa.test.login -->
+      </class> <!-- com.axisbank.qa.testcases.Savings_EasyAccessSA_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

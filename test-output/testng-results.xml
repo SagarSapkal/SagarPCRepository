@@ -1,86 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-12-07T03:21:44Z" name="Default suite" finished-at="2018-12-07T03:22:08Z" duration-ms="23963">
+  <suite started-at="2018-12-11T17:42:03Z" name="Default suite" finished-at="2018-12-11T17:42:23Z" duration-ms="20092">
     <groups>
     </groups>
-    <test started-at="2018-12-07T03:21:44Z" name="Default test" finished-at="2018-12-07T03:22:08Z" duration-ms="23963">
-      <class name="com.qa.test.login">
-        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:com.qa.test.login@55b0dcab]" started-at="2018-12-07T08:51:44Z" name="Beforemethod" finished-at="2018-12-07T08:51:48Z" duration-ms="3847" status="PASS">
+    <test started-at="2018-12-11T17:42:03Z" name="Default test" finished-at="2018-12-11T17:42:23Z" duration-ms="20092">
+      <class name="com.axisbank.qa.testcases.Savings_EasyAccessSA_Test">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.axisbank.qa.testcases.Savings_EasyAccessSA_Test@6200f9cb]" started-at="2018-12-11T23:12:03Z" name="SetUp" finished-at="2018-12-11T23:12:16Z" duration-ms="12770" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Beforemethod -->
-        <test-method signature="actions()[pri:3, instance:com.qa.test.login@55b0dcab]" started-at="2018-12-07T08:51:48Z" name="actions" finished-at="2018-12-07T08:52:08Z" duration-ms="20098" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=70.0.3538.110)
-  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-BT0O8U0O', ip: '172.16.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\SAGARS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50288}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: 6ccfd577d2771924b22defca4ee1a609]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not interactable
-  (Session info: chrome=70.0.3538.110)
-  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-BT0O8U0O', ip: '172.16.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\SAGARS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50288}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: 6ccfd577d2771924b22defca4ee1a609
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.qa.test.login.actions(login.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+        </test-method> <!-- SetUp -->
+        <test-method signature="SubmitFormTest()[pri:0, instance:com.axisbank.qa.testcases.Savings_EasyAccessSA_Test@6200f9cb]" started-at="2018-12-11T23:12:16Z" name="SubmitFormTest" finished-at="2018-12-11T23:12:22Z" duration-ms="6556" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- actions -->
-      </class> <!-- com.qa.test.login -->
+        </test-method> <!-- SubmitFormTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.axisbank.qa.testcases.Savings_EasyAccessSA_Test@6200f9cb]" started-at="2018-12-11T23:12:22Z" name="TearDown" finished-at="2018-12-11T23:12:23Z" duration-ms="746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.axisbank.qa.testcases.Savings_EasyAccessSA_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

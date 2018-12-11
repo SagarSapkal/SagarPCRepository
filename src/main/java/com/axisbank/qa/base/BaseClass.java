@@ -11,14 +11,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 
+
 import com.axisbank.qa.util.TestUtil;
 
 public class BaseClass {
 
-	static WebDriver driver;
-	static Properties prop;
+	public static WebDriver driver;
+	public static Properties prop;
 	
-	public void BaseClass(){
+	public BaseClass(){
 		
 		try {
 		prop = new Properties();
@@ -35,6 +36,7 @@ public class BaseClass {
 	
 	public static void initialization(){
 		String browserName= prop.getProperty("browser");
+		
 		if (browserName.equals("chrome")) {
 
 			ChromeOptions options = new ChromeOptions();
