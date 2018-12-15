@@ -12,7 +12,7 @@ import com.axisbank.qa.base.BaseClass;
 public class Savings_EasyAccessSA extends BaseClass{
 
 	
-	@FindBy(xpath="//*[@id=\"Genesys1_txtName\"]")
+	@FindBy(xpath="//*[@id=\"Genesys1_txtNames\"]")
 	WebElement Name;
 	
 	@FindBy(xpath="//*[@id=\"Genesys1_txtEmail\"]")
