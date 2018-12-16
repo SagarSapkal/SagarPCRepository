@@ -6,13 +6,6 @@
   </listeners>
   <test name="POM Test cases(failed)">
     <classes>
-      <class name="com.axisbank.qa.testcases.HomePageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="Navigatetest"/>
-        </methods>
-      </class> <!-- com.axisbank.qa.testcases.HomePageTest -->
       <class name="com.axisbank.qa.testcases.Savings_EasyAccessSA_Test">
         <methods>
           <include name="TearDown"/>
