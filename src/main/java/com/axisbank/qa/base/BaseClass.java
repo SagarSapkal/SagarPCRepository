@@ -20,7 +20,7 @@ public class BaseClass {
 
 	public static WebDriver driver;
 	public static Properties prop;
-	public  static EventFiringWebDriver e_driver;
+	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 	
 	public BaseClass(){

@@ -140,5 +140,11 @@
 		    <version>5.1.6</version>
 		</dependency>
 
-  </dependencies>
+
+		<dependency>
+		  <groupId>com.codoid.products</groupId>
+		  <artifactId>fillo</artifactId>
+		  <version>1.18</version>
+		</dependency>
+		  </dependencies>
 </project>
