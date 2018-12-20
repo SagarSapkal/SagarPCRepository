@@ -31,7 +31,8 @@ public class DBExcelUtility extends BaseClass {
 						
 		    }				 
 		}
-		System.out.println(hm);
+		rs.close();
+		connection.close();
 		 return hm; 
 		 
 		 
