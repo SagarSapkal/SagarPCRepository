@@ -2,6 +2,13 @@ package com.axisbank.qa.util;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.HashMap;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -89,7 +96,39 @@ public class TestUtil extends BaseClass {
 	    	js.executeScript("arguments[0].scrollIntoView(true);", element);
 	    }
 	    
+		 public static HashMap<String,String> GetTestData(String SheetName,String TestCaseName) throws SQLException, ClassNotFoundException {
+			
+			 HashMap<String,String> hm=new HashMap<String,String>(); 	
+			 Class.forName(prop.getProperty("dbDriver"));
+			 Connection con =DriverManager.getConnection(prop.getProperty("dbUrl"),prop.getProperty("dbUsername"),prop.getProperty("dbPassword"));			
+			 Statement stm = con.createStatement();
+			 ResultSet rs = stm.executeQuery("select * from"+SheetName+" where TestCaseID="+TestCaseName);
+			 //Get Coulumn Count
+			 ResultSetMetaData rsmd = rs.getMetaData();
+			 int ColumnCount = rsmd.getColumnCount();
 
+				while( rs.next()){
+						 
+					for(int i = 1;i<=ColumnCount;i++) {
+					
+						String ColumnName = rsmd.getColumnName(i);
+						String ColumnData = rs.getString(i);
+						hm.put(ColumnName, ColumnData);
+								
+				    }				 
+				}
+			
+				return hm;
+			
+	 
+			}
+	    
+	    
+	    
+	    
+	    
+	    
+	    
 }
  
 
